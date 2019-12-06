@@ -56,4 +56,12 @@
     <a class="btn" href="contact.html">Let's Chat!</a>
 </div>
 </body>
+<script type="application/javascript">
+    if (window.location.hash === "#redirect_from_old_site") {
+        var a = document.createElement('script');
+        a.async = true;
+        a.src = "/old-site-banner.js";
+        document.body.appendChild(a);
+    }
+</script>
 </html>
